@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+packages/backend/inbox/*
+!packages/backend/inbox/.gitkeep
+packages/backend/storage/
+.DS_Store

@@ -104,20 +104,32 @@ router.post('/sync/:invoiceId', async (req: Request, res: Response) => {
   const { client, tenantId } = connection;
 
   try {
-    // Build Xero invoice
-    const lineItems = invoice.lineItems.map((item) => ({
-      description: item.description,
-      quantity: item.quantity,
-      unitAmount: item.unitPrice,
-      accountCode: '200', // default expense account
-    }));
+    // Build Xero invoice line items with proportional tax distribution
+    const invoiceSubtotal = invoice.subtotal ?? invoice.lineItems.reduce((s, i) => s + i.amount, 0);
+    const invoiceTax = invoice.taxAmount ?? 0;
+
+    const lineItems = invoice.lineItems.map((item) => {
+      // Distribute tax proportionally across line items
+      const proportion = invoiceSubtotal > 0 ? item.amount / invoiceSubtotal : 0;
+      const itemTax = Math.round(invoiceTax * proportion * 100) / 100;
+      return {
+        description: item.description,
+        quantity: item.quantity,
+        unitAmount: item.unitPrice,
+        taxType: 'NONE' as const,
+        taxAmount: itemTax,
+        accountCode: '200', // default expense account
+      };
+    });
 
     // If no line items, create a single line from total
     if (lineItems.length === 0 && invoice.totalAmount) {
       lineItems.push({
         description: invoice.fileName,
         quantity: 1,
-        unitAmount: invoice.totalAmount,
+        unitAmount: invoice.subtotal ?? invoice.totalAmount,
+        taxType: 'NONE' as const,
+        taxAmount: invoiceTax,
         accountCode: '200',
       });
     }

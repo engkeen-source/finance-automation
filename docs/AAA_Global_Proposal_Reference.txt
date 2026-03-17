@@ -1,0 +1,193 @@
+﻿Project Proposal For 
+AI-Powered Accounting Automation
+For Acumen Alpha Advisory Pte Ltd
+
+
+1. About the Company
+
+
+Background of the Company
+Acumen Alpha Advisory Pte Ltd, operating as AAA Global, is a Singapore-based professional services firm specialising in audit and assurance, advisory, business administration outsourcing, taxation, and corporate secretarial services.
+
+
+Nature of business and products/services produced
+
+
+
+
+
+
+Key markets & Client base
+
+
+
+
+
+
+Competition and unique selling point
+
+
+
+
+________________
+
+
+2. About the Project
+This project proposes the development of an AI-powered accounting automation system — an Agentic AI solution designed to eliminate the need for human data entry in accounting workflows.
+What This Is
+* An intelligent document processing layer that sits between client documents and existing accounting software (Xero, QuickBooks)
+* An AI agent that captures, processes, and categorises financial data from scanned or uploaded documents
+* An automation engine that transforms unstructured documents into structured accounting entries via API
+What This Is Not
+* This is NOT a replacement for accounting software — it integrates with and enhances existing systems
+* This is NOT a client-facing SaaS product (in Phase 1) — it is an internal productivity tool
+* This does NOT eliminate accountants — it eliminates manual data entry so accountants can focus on higher-value advisory work
+Strategic Approach
+The project follows a two-phase strategy:
+Phase 1 — Internal Productivity (This Proposal)
+Deploy the AI system within AAA Global as a case study. Prove effectiveness by dramatically reducing staff needed to manage client assignments. Explore integration options and refine the client handling process.
+Phase 2 — Productize & Go to Market (Future)
+Once proven internally, explore commercialisation options: B2B licensing to other accounting firms, enabling freelance accountants, or positioning for acquisition by larger firms. The system's exponential scalability means that once the process is fixed, expanding from 50 to 500 clients requires minimal additional investment.
+
+
+This phased approach aligns with Singapore's digital transformation direction, including upcoming e-invoicing regulations and government support for enterprise productivity solutions.
+
+
+________________
+
+
+3. Project Outcomes
+Upon successful completion of Phase 1, the following measurable outcomes are expected:
+Outcome
+	Current State
+	Target State
+	Staff-to-client ratio
+	1 : 10
+	1 : 50+
+	Data entry automation rate
+	0% (manual)
+	90%+
+	Human verification required
+	100%
+	~10%
+	Staff needed for 50 assignments
+	5 staff
+	1-2 staff
+	Document processing time
+	20 Minutes per document
+	Seconds per document
+	Data entry error rate
+	Human error rate
+	Near zero
+	Key Deliverables
+* Automated document processing pipeline for sales invoices, purchase invoices, bank statements, and expense claims
+* AI-powered OCR and data extraction with intelligent field recognition (invoice numbers, amounts, dates, line items, tax rates, vendor details)
+* Seamless integration with Xero and QuickBooks via API for automated journal entry creation
+* Web-based review dashboard with approval workflow for human oversight
+* Multi-client workspace management with folder-based document organisation
+* Payment schedule tracking with automated reminders and due date alerts
+* Analytics and reporting dashboard for operational visibility
+* Foundation architecture ready for Phase 2 scaling and productisation
+
+
+Project Assumptions
+1. Third party integrations would be in English only.
+2. AAA Global will provide all content, sample data, functional requirements, business scenarios, adequate number of test users and all other relevant material required for the development.
+3. All relevant inputs, data, requirements, and feedback received promptly.
+4. Unless specified, any additional environments, hosting, subscription, AI processing cost or any other third-party services are not included in this proposal.
+5. Costs and timelines are indicative and may vary if there are material variances during scoping of the requirements. Any additional scope and requirement of resources/functional specifications shall be subject to separate charges. The impact of such variances would be highlighted and any impact on the timelines and costs would be mutually agreed to.
+________________
+4. Project Scope
+
+
+No.
+	Modules/Functions
+	Target Completion Date
+	1
+	Foundation
+• Document ingestion system with folder-based categorisation
+• OCR pipeline for text extraction
+• AI-powered data extraction engine
+• Basic web dashboard for document review
+	Month 1-2
+	2
+	Infrastructure
+• Xero, Quickbook, MYOB API integration for automated invoice/bill creation
+• Multi-client folder structure and workspace isolation
+• Approval workflow with human review dashboard
+• Tax rate detection and currency handling
+	Month 3-4
+	3
+	Intelligence
+• AI learning from human corrections to improve accuracy
+• Payment scheduling and due date reminders
+• Bank statement processing and reconciliation support
+• Client notification system
+	Month 5
+	4
+	Optimisation
+• Accuracy refinement and edge case handling
+• Reporting and analytics dashboard
+• Staff training and change management
+• User acceptance testing (UAT) and production go-live
+	Month 6
+	
+
+________________
+5. Project Costing
+
+
+No.
+	Modules/Functions
+	Price (SGD)
+	1
+	AI Solution Development (6 months)
+	$80,000
+	2
+	AI Cloud Infrastructure & API Costs
+	$10,000
+	3
+	Integration, Testing & QA
+	$10,000
+	
+
+Total Project Cost: SGD 100,000
+________________
+Maintenance costing (6 months)
+No.
+	Items
+	Price (SGD)
+	1
+	System Maintenance, Monitoring & Ongoing Support x 6 months
+(SGD 800 per month)
+   * System Health Monitoring
+   * Security Updates & Patching
+   * Minor Bug Fixes & Stability Improvements
+   * Database Maintenance
+	$4,800
+	2
+	Infrastructure Hosting & Cloud Services (Production) - 6 Months
+(Cost-to-cost based on USD 200 per month)
+	$1,500
+	3
+	Optional
+Support Man-Day Package (10 Days) 
+   * 10 man-days of engineering support usable within 6 months
+   * For change requests, enhancements, UI/UX updates, and backend improvements
+   * Faster turnaround for priority tasks without separate quotations
+	$10,000
+	Total Maintenance Cost for 6 months (exclude optional item Support Man-Day Package) : SGD 6,300
+
+
+
+
+________________
+Variable costing
+
+
+No.
+	Items
+	Price (SGD)
+	1
+	AI API consumption costs
+	USD 200-800 per month depending on volume

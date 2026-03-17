@@ -1,0 +1,156 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram id="arch" name="System Architecture">
+    <mxGraphModel dx="1896" dy="904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uIr9Kbab52kQrLo7R_1j-3" edge="1" parent="1" source="mc_group" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" target="input_group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mc_group" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=5;dashed=0;strokeColor=#1F4E79;container=1;collapsible=0;" value="Multi-Client Layer" vertex="1">
+          <mxGeometry height="80" width="1240" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="clientA" parent="mc_group" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;" value="Client A" vertex="1">
+          <mxGeometry height="30" width="81.57894736842105" x="16.31578947368421" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="clientB" parent="mc_group" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;" value="Client B" vertex="1">
+          <mxGeometry height="30" width="81.57894736842105" x="110.13157894736842" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="clientC" parent="mc_group" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;" value="Client C" vertex="1">
+          <mxGeometry height="30" width="81.57894736842105" x="203.94736842105263" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="clientN" parent="mc_group" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1F4E79;" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;...&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="32.63157894736842" x="293.6842105263158" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="clientLast" parent="mc_group" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;" value="Client N" vertex="1">
+          <mxGeometry height="30" width="81.57894736842105" x="334.4736842105263" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="mgmt_dash" parent="mc_group" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Centralized Management Dashboard" vertex="1">
+          <mxGeometry height="30" width="280" x="510" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="input_group" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=5;strokeColor=#1F4E79;container=1;collapsible=0;" value="Input Layer" vertex="1">
+          <mxGeometry height="350" width="280" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="folder_sales" parent="input_group" style="shape=folder;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;spacingTop=8;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Sales Invoices" vertex="1">
+          <mxGeometry height="55" width="120" x="15" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="folder_purchase" parent="input_group" style="shape=folder;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;spacingTop=8;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Purchase Invoices" vertex="1">
+          <mxGeometry height="55" width="120" x="145" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="folder_bank" parent="input_group" style="shape=folder;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;spacingTop=8;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Bank Statements" vertex="1">
+          <mxGeometry height="55" width="120" x="15" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="folder_expense" parent="input_group" style="shape=folder;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;spacingTop=8;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Expenses" vertex="1">
+          <mxGeometry height="55" width="120" x="145" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="upload_label" parent="input_group" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=5;fontColor=#1F4E79;" value="Upload Methods" vertex="1">
+          <mxGeometry height="20" width="160" x="60" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="upload_scan" parent="input_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontSize=14;fontColor=#ffffff;" value="Scan / Photo" vertex="1">
+          <mxGeometry height="30" width="75" x="15" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="upload_email" parent="input_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontSize=14;fontColor=#ffffff;" value="Email" vertex="1">
+          <mxGeometry height="30" width="75" x="100" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="upload_drag" parent="input_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontSize=14;fontColor=#ffffff;" value="Drag &amp;amp; Drop" vertex="1">
+          <mxGeometry height="30" width="75" x="185" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_group" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=5;strokeColor=#1F4E79;container=1;collapsible=0;" value="Processing Layer" vertex="1">
+          <mxGeometry height="350" width="620" x="370" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uIr9Kbab52kQrLo7R_1j-8" edge="1" parent="proc_group" source="ingestion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" target="ocr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ingestion" parent="proc_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontSize=14;fontStyle=1;fontColor=#ffffff;" value="Document&#xa;Ingestion" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uIr9Kbab52kQrLo7R_1j-9" edge="1" parent="proc_group" source="ocr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" target="ai_extract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ocr" parent="proc_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontSize=14;fontStyle=1;fontColor=#ffffff;" value="OCR Engine&#xa;(Tesseract)" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uIr9Kbab52kQrLo7R_1j-5" edge="1" parent="proc_group" source="ai_extract" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uIr9Kbab52kQrLo7R_1j-6" edge="1" parent="proc_group" source="ai_extract" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai_extract" parent="proc_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontSize=14;fontStyle=0;fontColor=#ffffff;" value="AI Data Extraction&#xa;&#xa;Invoice #, Amounts,&#xa;Dates, Line Items,&#xa;Tax Rate, Vendor" vertex="1">
+          <mxGeometry height="110" width="170" x="190" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="proc_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;fontSize=14;fontStyle=1;" value="Human Review&#xa;Dashboard&#xa;&#xa;Approval / Correction&#xa;Confidence Score" vertex="1">
+          <mxGeometry height="110" width="170" x="420" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow_ingest_ocr" edge="1" parent="proc_group" source="ingestion" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#d6b656;strokeWidth=2;fillColor=#fff2cc;fontSize=14;" target="ocr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="int_group" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=5;strokeColor=#1F4E79;container=1;collapsible=0;" value="Integration Layer" vertex="1">
+          <mxGeometry height="350" width="250" x="1040" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="xero" parent="int_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27AE60;strokeColor=#1E8449;fontColor=#FFFFFF;fontSize=14;fontStyle=1;" value="Xero API&#xa;(Primary)" vertex="1">
+          <mxGeometry height="50" width="170" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qb" parent="int_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27AE60;strokeColor=#1E8449;fontColor=#FFFFFF;fontSize=14;fontStyle=1;" value="QuickBooks API" vertex="1">
+          <mxGeometry height="50" width="170" x="40" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="myob" parent="int_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27AE60;strokeColor=#1E8449;fontColor=#FFFFFF;fontSize=14;fontStyle=1;" value="MYOB API" vertex="1">
+          <mxGeometry height="50" width="170" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="int_features" parent="int_group" style="text;html=1;align=left;verticalAlign=top;fontSize=14;fontColor=#FFFFFF;fontStyle=2;" value="• Invoice/Bill Creation&#xa;• File Attachment Upload&#xa;• Contact Sync" vertex="1">
+          <mxGeometry height="60" width="170" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="intel_group" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;fontSize=14;fontStyle=1;verticalAlign=top;spacingTop=5;strokeColor=#1F4E79;container=1;collapsible=0;" value="Intelligence Layer" vertex="1">
+          <mxGeometry height="110" width="1250" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="ai_learn" parent="intel_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontSize=14;fontStyle=1;fontColor=#ffffff;" value="AI Learning Loop&#xa;Corrections → Improved Accuracy" vertex="1">
+          <mxGeometry height="55" width="250" x="60" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_sched" parent="intel_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontSize=14;fontStyle=1;fontColor=#ffffff;" value="Payment Scheduler&#xa;Due Dates &amp;amp; Reminders" vertex="1">
+          <mxGeometry height="55" width="250" x="370" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="bank_recon" parent="intel_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontSize=14;fontStyle=1;fontColor=#ffffff;" value="Bank Reconciliation&#xa;Match Statements → Invoices" vertex="1">
+          <mxGeometry height="55" width="250" x="670" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="reporting" parent="intel_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontSize=14;fontStyle=1;fontColor=#ffffff;" value="Reporting &amp;amp; Analytics&#xa;Volume, Accuracy, Productivity" vertex="1">
+          <mxGeometry height="55" width="250" x="960" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2_group" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;fontColor=#95A5A6;fontSize=14;fontStyle=3;verticalAlign=top;spacingTop=5;strokeColor=#95A5A6;dashed=1;dashPattern=8 4;container=1;collapsible=0;" value="Phase 2 — Future" vertex="1">
+          <mxGeometry height="110" width="520" x="440" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2_portal" parent="phase2_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontSize=14;fontStyle=2;fontColor=#ffffff;dashed=1;" value="Client-Facing&#xa;Portal" vertex="1">
+          <mxGeometry height="55" width="110" x="15" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2_llm" parent="phase2_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontSize=14;fontStyle=2;fontColor=#ffffff;dashed=1;" value="Custom&#xa;Accounting LLM" vertex="1">
+          <mxGeometry height="55" width="110" x="140" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2_crm" parent="phase2_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontSize=14;fontStyle=2;fontColor=#ffffff;dashed=1;" value="CRM&#xa;Integration" vertex="1">
+          <mxGeometry height="55" width="110" x="265" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2_pay" parent="phase2_group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontSize=14;fontStyle=2;fontColor=#ffffff;dashed=1;" value="Auto-Payment&#xa;(GIRO/PayNow)" vertex="1">
+          <mxGeometry height="55" width="110" x="390" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow_input_proc" edge="1" parent="1" source="input_group" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#1F4E79;strokeWidth=3;entryX=0;entryY=0.5;fontSize=14;" target="ingestion" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="305" as="sourcePoint" />
+            <mxPoint x="390" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow_review_xero" edge="1" parent="1" source="review" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#27AE60;strokeWidth=3;fontColor=#27AE60;fontSize=14;fontStyle=1;" target="xero" value="Approved">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="990" y="265" as="sourcePoint" />
+            <mxPoint x="1040" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uIr9Kbab52kQrLo7R_1j-4" edge="1" parent="1" source="folder_bank" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fillColor=#60a917;strokeColor=#2D7600;" target="bank_recon">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="430" />
+              <mxPoint x="835" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
